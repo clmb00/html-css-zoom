@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+}
+
+header{
+  height: 50px;
+}
+
+main{
+  height: calc(100vh - 130px);
+  overflow-y: auto;
+}
+
+footer{
+  height: 80px;
+  background-color: #222222;
+}
