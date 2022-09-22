@@ -16,6 +16,11 @@ a{
   color: white;
 }
 
+.container{
+  width: 98%;
+  margin: 0 auto;
+}
+
 /* HEADER */
 header{
   height: 50px;
@@ -28,7 +33,7 @@ header{
   right: 5px;
 }
 
-header .button{
+header .h-button{
   display: inline-block;
   background-color: #4A4A4A;
   text-align: center;
@@ -42,11 +47,6 @@ header .button{
 main{
   height: calc(100vh - 130px);
   overflow-y: auto;
-}
-
-.container{
-  width: 98%;
-  margin: 0 auto;
 }
 
 .camera{
@@ -78,25 +78,44 @@ footer{
 }
 
 footer .button{
-  background-color: yellow;
+  display: flex;
+  align-items: center;
   height: 80px;
   padding: 10px;
   text-align: center;
 }
 
 footer .button a i{
-  font-size: 2.4rem;
-  margin-bottom: 4px;
-}
-
-footer .button a p{
-  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
 }
 
 footer .button.arrow-up a i{
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   margin-bottom: 0px;
-  line-height: 60px;
+}
+
+footer .button.active a i{
+  color: #5de70d;
+}
+
+/* ACTIVE EFFECT PER PROVARLO SU TUTTI */
+footer .button:active a i{
+  color: #5de70d;
+}
+
+footer .text-button{
+  padding: 0 20px;
+  height: 80px;
+  line-height: 80px;
+}
+
+footer .text-button.active{
+  background-color: #4A4A4A;
+}
+
+footer .text-button.active a{
+  color: red;
 }
 /* ------ */
 
